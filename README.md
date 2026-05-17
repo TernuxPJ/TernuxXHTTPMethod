@@ -1,51 +1,60 @@
-<div align="center">
+# Ternux Codespace - پروکسی رایگان VLESS+xHTTP با گیت‌هاب کداسپیس
 
-# 🌊 TernuxXHTTPMethod
+[![Ternux](https://img.shields.io/badge/Ternux-blue)](https://github.com/ternux/ternux-codespace)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### *Free VLESS + xHTTP Proxy on GitHub Codespaces*
-
-[![TernuxXHTTPMethod](https://img.shields.io/badge/TernuxXHTTPMethod-Aqua%20White-00FFFF?style=for-the-badge&logo=github)](https://github.com/ternux/TernuxXHTTPMethod)
-[![License: MIT](https://img.shields.io/badge/License-MIT-00FFFF?style=for-the-badge&logo=opensourceinitiative)](https://opensource.org/licenses/MIT)
-[![GitHub Codespaces](https://img.shields.io/badge/GitHub-Codespaces-00FFFF?style=for-the-badge&logo=githubcodespaces)](https://github.com/features/codespaces)
-[![Xray](https://img.shields.io/badge/Xray-Core-00FFFF?style=for-the-badge&logo=xray)](https://github.com/XTLS/Xray-core)
-
-**Deploy a high-speed VLESS proxy with xHTTP transport on GitHub Codespaces in under 5 minutes. Completely free, no external server required!**
-
-</div>
+**این ریپازیتوری به شما امکان می‌دهد در کمتر از ۵ دقیقه یک پروکسی VLESS با ترانسپورت xHTTP روی GitHub Codespaces راه‌اندازی کنید. کاملاً رایگان، بدون نیاز به سرور خارجی!**
 
 ---
 
-## ✨ Features
+## ✨ ویژگی‌ها
 
-| Feature | Description |
-|---------|-------------|
-| 🆓 **100% Free** | Only need a GitHub account |
-| ⚡ **High Speed** | Optimized Xray-core performance |
-| 🔒 **Anti-Censorship** | VLESS protocol + xHTTP transport |
-| 📱 **Universal Support** | Works with v2rayNG, Nekobox, Streisand, and more |
-| 🔄 **Auto Keepalive** | Prevents Codespace from sleeping |
-| 🎨 **Aqua White Theme** | Clean and modern design |
+- 🆓 **کاملاً رایگان** - فقط با یک اکانت گیت‌هاب
+- ⚡ **سرعت بالا** - استفاده از Xray-core بهینه
+- 🔒 **مقاوم در برابر فیلترینگ** - پروتکل VLESS + xHTTP
+- 📱 **پشتیبانی از همه کلاینت‌ها** - v2rayNG، Nekobox، Streisand و...
+- 🔄 **Keepalive خودکار** - جلوگیری از خاموشی کداسپیس
 
 ---
 
-## 📋 Table of Contents
+## 🚀 نحوه استفاده (گام‌به‌گام)
 
-- [Quick Start](#-quick-start)
-- [Installation Guide](#-installation-guide)
-- [Configuration](#-configuration)
-- [Supported Clients](#-supported-clients)
-- [Troubleshooting](#-troubleshooting)
-- [FAQ](#-faq)
-- [License](#-license)
+### مرحله ۱: فورک کردن ریپو
+
+1. وارد گیت‌هاب شوید و این ریپو را **Fork** کنید.
+
+### مرحله ۲: اجرا در Codespaces
+
+1. روی دکمه **Code** کلیک کنید.
+2. تب **Codespaces** را انتخاب کنید.
+3. روی **Create codespace on main** کلیک کنید.
+4. صبر کنید تا کانتینر ساخته شود (حدود ۲-۳ دقیقه).
+
+### مرحله ۳: دریافت لینک پروکسی
+
+بعد از اتمام ساخت، در ترمینال یک لینک VLESS نمایش داده می‌شود. آن را کپی کنید.
+
+### مرحله ۴: تنظیم پورت (بسیار مهم)
+
+- در محیط Codespace، تب **PORTS** را باز کنید.
+- پورت **443** را پیدا کنید.
+- روی آن راست کلیک کرده و **Visibility** > **Public** را انتخاب کنید.
+
+### مرحله ۵: اتصال
+
+لینک کپی‌شده را در اپلیکیشن پروکسی خود وارد کنید.
 
 ---
 
-## 🚀 Quick Start
+## 📖 راهنمای استفاده
+
+### 🔗 دریافت و استفاده از لینک
+
+بعد از اجرای کداسپیس، لینک VLESS به صورت خودکار در ترمینال نمایش داده می‌شود.
+
+### 🔄 نمایش مجدد لینک
+
+اگر به هر دلیلی لینک را گم کردید، در ترمینال کداسپیس دستور زیر را اجرا کنید:
 
 ```bash
-# 1. Fork this repository
-# 2. Create a Codespace from your fork
-# 3. Wait for auto-setup (2-3 minutes)
-# 4. Copy your VLESS link from terminal
-# 5. Set port 443 to Public
-# 6. Connect with your favorite client!
+show-link.sh
