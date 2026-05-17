@@ -125,8 +125,8 @@ Ternux/
 
 ## 📞 Support
 
-- Telegram: https://t.me/ternux
-- YouTube: https://youtube.com/@ternux
+- Telegram: https://t.me/Muvixo
+
 
 ---
 
@@ -143,4 +143,4 @@ MIT License - Free for everyone
 **⭐ Star this repo if it helps you ⭐**
 
 </div>
-```
+
