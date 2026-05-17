@@ -6,5 +6,5 @@ sleep 2
 show-link.sh
 tmux new-window -t ternux -n keepalive
 tmux send-keys -t ternux:keepalive "while true; do curl -s --max-time 5 https://github.com/ -o /dev/null; sleep 180; done" Enter
-echo "[TernuxXHTTPMethod] Xray is running in background (tmux session: ternux)"
-echo "[TernuxXHTTPMethod] View logs: tmux attach -t ternux"
+echo "[Ternux] Xray is running in background (tmux session: ternux)"
+echo "[Ternux] View logs: tmux attach -t ternux"
