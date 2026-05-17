@@ -1,5 +1,5 @@
 {
-  "name": "TernuxXHTTPMethod Codespace",
+  "name": "Ternux Codespace",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
