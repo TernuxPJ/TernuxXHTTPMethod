@@ -193,6 +193,6 @@ MIT License - Free for everyone to use, modify, and share.
 
 ---
 
-**© 2025 Ternux | Free Internet for Everyone**
+**© 2026 Ternux | Free Internet for Everyone**
 
 </div>
