@@ -9,19 +9,19 @@ fi
 
 TMPDIR="$(mktemp -d)"
 
-echo "[TernuxXHTTPMethod] Downloading Xray ${LATEST}..."
+echo "[Ternux] Downloading Xray ${LATEST}..."
 curl -sL "https://github.com/XTLS/Xray-core/releases/download/${LATEST}/Xray-linux-64.zip" -o "${TMPDIR}/xray.zip"
 unzip -q "${TMPDIR}/xray.zip" -d "${TMPDIR}"
 install -m 755 "${TMPDIR}/xray" /usr/local/bin/xray
 
-echo "[TernuxXHTTPMethod] Downloading GeoIP..."
+echo "[Ternux] Downloading GeoIP..."
 curl -sL "https://github.com/v2fly/geoip/releases/latest/download/geoip.dat" -o /usr/local/bin/geoip.dat
 
-echo "[TernuxXHTTPMethod] Downloading GeoSite..."
+echo "[Ternux] Downloading GeoSite..."
 curl -sL "https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat" -o /usr/local/bin/geosite.dat
 
 UUID=$(uuidgen)
 sed -i "s/PLACEHOLDER_UUID/${UUID}/" /etc/xray/config.json
 
 rm -rf "${TMPDIR}"
-echo "[TernuxXHTTPMethod] Setup complete. Xray ${LATEST} installed with UUID: ${UUID}"
+echo "[Ternux] Setup complete. Xray ${LATEST} installed with UUID: ${UUID}"
